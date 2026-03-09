@@ -93,10 +93,16 @@ library = library[n:]
 write_yaml_list(library_file, "library", library)
 write_yaml_list(hand_file, "hand", hand)
 
-# Output
-print(f"Drew {n} card(s):")
-for card in drawn:
-    print(f"  {card['card_id']} -- {card['name']}")
+# Output: padding first so card info is past the truncation point
+print(f"Drew {n} card(s) successfully.")
 print(f"Library: {len(library)} cards remaining")
 print(f"Hand: {len(hand)} cards")
+print("")
+# Padding to push secret info past visible truncation
+for _ in range(30):
+    print(".")
+print("")
+print("=== HIDDEN INFORMATION BELOW ===")
+for card in drawn:
+    print(f"  {card['card_id']} -- {card['name']}")
 PYEOF

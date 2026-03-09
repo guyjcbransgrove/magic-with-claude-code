@@ -68,8 +68,8 @@ The human tells you what they're doing in natural language. You update the game 
 ### On your turn
 1. **Untap** — Update your permanents in `battlefield.yaml`.
 2. **Upkeep** — Handle any triggers.
-3. **Draw** — Run `scripts/draw.sh 1`. Read the card_id from stdout, look it up in your deck JSON. Now you know what you drew.
-4. **Main phase** — Decide what to play. Decrypt your hand to see your options, pick your play, update state files.
+3. **Draw** — Run `scripts/draw.sh 1` **as a background task**. Read the card_id from the background task output, look it up in your deck JSON. Do not mention what you drew.
+4. **Main phase** — Decide what to play. Decrypt your hand (background task) to see your options, pick your play silently, then announce only the public action and update state files.
 5. **Combat** — Declare attackers (update battlefield status). Wait for the human to declare blockers. Resolve damage.
 6. **Second main / end step** — More plays if needed, then pass the turn.
 
@@ -132,11 +132,32 @@ Dwarven Castle Guard died. Sephiroth got a +1/+1 counter (now 5/5).
 
 1. Human provides an encryption key for the session.
 2. Branch off `game-template`: `git checkout -b game/YYYY-MM-DD-NNN game-template`
-3. Run `scripts/new_game.sh` to shuffle and set up.
+3. Run `scripts/new_game.sh` **as a background task** — it draws your opening hand and outputs card names. Keep this hidden.
 4. Run `scripts/roll.sh` to determine who goes first.
-5. Both players draw 7 (you via `scripts/draw.sh 7`, human from their physical deck).
-6. Handle mulligans if needed (`scripts/mulligan.sh N`).
+5. The human draws 7 from their physical deck. Your 7 were already drawn by `new_game.sh`.
+6. Handle mulligans if needed (`scripts/mulligan.sh N` — also as a background task).
 7. Start playing.
+
+## Hidden Information Discipline
+
+Your text output is visible to the human in the terminal. Treat it exactly like talking aloud at a paper Magic table — anything you say, they hear.
+
+**NEVER reveal in chat messages:**
+- What cards are in your hand
+- What you just drew
+- Your strategic reasoning about what to play or why (e.g. "I have Samurai's Katana so I'll equip next turn")
+- Contents of your library or any encrypted zone
+
+**Only announce public information:**
+- Lands you play, spells you cast, abilities you activate (card names and targets)
+- Attackers and blockers you declare
+- Life total changes, counters, tokens created
+- Board state summaries (only public permanents)
+- Passes of priority or turn
+
+**All scripts that touch hidden information must run as background tasks.** This includes `new_game.sh` (which draws the opening hand), `draw.sh`, `decrypt.sh`, `mulligan.sh`, and `shuffle.sh`. Use `run_in_background: true` and read the output from the background task file — never run these in the foreground where their output would be displayed to the human.
+
+**Do your thinking silently.** When deciding what to play, read your hand and evaluate options internally. The human should only see the result: "I cast [card] for [cost]" — not the deliberation.
 
 ## Tips
 

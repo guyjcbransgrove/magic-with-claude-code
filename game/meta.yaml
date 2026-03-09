@@ -1,0 +1,7 @@
+game_id: ""
+turn: 0
+phase: "pregame"
+active_player: ""
+priority: ""
+starting_player: ""
+status: "not_started"

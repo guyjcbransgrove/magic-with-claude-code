@@ -1,0 +1,475 @@
+{
+  "deck_name": "Red-White (Cloud, Planet's Champion)",
+  "cards": [
+    {
+      "quantity": 1,
+      "name": "Cloud, Planet's Champion",
+      "mana_cost": "{3}{R}{W}",
+      "cmc": 5.0,
+      "type_line": "Legendary Creature \u00e2\u20ac\u201d Human Soldier Mercenary",
+      "oracle_text": "During your turn, as long as Cloud is equipped, it has double strike and indestructible. (This creature deals both first-strike and regular combat damage. Damage and effects that say \"destroy\" don't destroy this creature.)\nEquip abilities you activate that target Cloud cost {2} less to activate.",
+      "colors": [
+        "R",
+        "W"
+      ],
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [],
+      "rarity": "mythic",
+      "power": "4",
+      "toughness": "4"
+    },
+    {
+      "quantity": 2,
+      "name": "Cloudbound Moogle",
+      "mana_cost": "{3}{W}{W}",
+      "cmc": 5.0,
+      "type_line": "Creature \u00e2\u20ac\u201d Moogle",
+      "oracle_text": "Flying\nWhen this creature enters, put a +1/+1 counter on target creature.\nPlainscycling {2} ({2}, Discard this card: Search your library for a Plains card, reveal it, put it into your hand, then shuffle.)",
+      "colors": [
+        "W"
+      ],
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Flying",
+        "Plainscycling",
+        "Landcycling",
+        "Typecycling",
+        "Cycling"
+      ],
+      "rarity": "common",
+      "power": "2",
+      "toughness": "3"
+    },
+    {
+      "quantity": 2,
+      "name": "Coeurl",
+      "mana_cost": "{1}{W}",
+      "cmc": 2.0,
+      "type_line": "Creature \u00e2\u20ac\u201d Cat Beast",
+      "oracle_text": "{1}{W}, {T}: Tap target nonenchantment creature.",
+      "colors": [
+        "W"
+      ],
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "rarity": "common",
+      "power": "2",
+      "toughness": "2"
+    },
+    {
+      "quantity": 4,
+      "name": "Dwarven Castle Guard",
+      "mana_cost": "{1}{W}",
+      "cmc": 2.0,
+      "type_line": "Creature \u00e2\u20ac\u201d Dwarf Soldier",
+      "oracle_text": "When this creature dies, create a 1/1 colorless Hero creature token.",
+      "colors": [
+        "W"
+      ],
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "rarity": "common",
+      "power": "2",
+      "toughness": "1"
+    },
+    {
+      "quantity": 2,
+      "name": "Fate of the Sun-Cryst",
+      "mana_cost": "{4}{W}",
+      "cmc": 5.0,
+      "type_line": "Instant",
+      "oracle_text": "This spell costs {2} less to cast if it targets a tapped creature.\nDestroy target nonland permanent.",
+      "colors": [
+        "W"
+      ],
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "rarity": "common"
+    },
+    {
+      "quantity": 2,
+      "name": "Slash of Light",
+      "mana_cost": "{1}{W}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "oracle_text": "Slash of Light deals damage equal to the number of creatures you control plus the number of Equipment you control to target creature.",
+      "colors": [
+        "W"
+      ],
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "rarity": "common"
+    },
+    {
+      "quantity": 2,
+      "name": "White Auracite",
+      "mana_cost": "{2}{W}{W}",
+      "cmc": 4.0,
+      "type_line": "Artifact",
+      "oracle_text": "When this artifact enters, exile target nonland permanent an opponent controls until this artifact leaves the battlefield.\n{T}: Add {W}.",
+      "colors": [
+        "W"
+      ],
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "rarity": "common"
+    },
+    {
+      "quantity": 1,
+      "name": "White Mage's Staff",
+      "mana_cost": "{1}{W}",
+      "cmc": 2.0,
+      "type_line": "Artifact \u00e2\u20ac\u201d Equipment",
+      "oracle_text": "Job select (When this Equipment enters, create a 1/1 colorless Hero creature token, then attach this to it.)\nEquipped creature gets +1/+1, has \"Whenever this creature attacks, you gain 1 life,\" and is a Cleric in addition to its other types.\nEquip {3} ({3}: Attach to target creature you control. Equip only as a sorcery.)",
+      "colors": [
+        "W"
+      ],
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Job select",
+        "Equip"
+      ],
+      "rarity": "common"
+    },
+    {
+      "quantity": 1,
+      "name": "Adelbert Steiner",
+      "mana_cost": "{1}{W}",
+      "cmc": 2.0,
+      "type_line": "Legendary Creature \u00e2\u20ac\u201d Human Knight",
+      "oracle_text": "Lifelink\nAdelbert Steiner gets +1/+1 for each Equipment you control.",
+      "colors": [
+        "W"
+      ],
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Lifelink"
+      ],
+      "rarity": "uncommon",
+      "power": "2",
+      "toughness": "1"
+    },
+    {
+      "quantity": 1,
+      "name": "The Crystal's Chosen",
+      "mana_cost": "{5}{W}{W}",
+      "cmc": 7.0,
+      "type_line": "Sorcery",
+      "oracle_text": "Create four 1/1 colorless Hero creature tokens. Then put a +1/+1 counter on each creature you control.",
+      "colors": [
+        "W"
+      ],
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "rarity": "uncommon"
+    },
+    {
+      "quantity": 1,
+      "name": "Dragoon's Lance",
+      "mana_cost": "{1}{W}",
+      "cmc": 2.0,
+      "type_line": "Artifact \u00e2\u20ac\u201d Equipment",
+      "oracle_text": "Job select (When this Equipment enters, create a 1/1 colorless Hero creature token, then attach this to it.)\nEquipped creature gets +1/+0 and is a Knight in addition to its other types.\nDuring your turn, equipped creature has flying.\nGae Bolg \u00e2\u20ac\u201d Equip {4}",
+      "colors": [
+        "W"
+      ],
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Gae Bolg",
+        "Job select",
+        "Equip"
+      ],
+      "rarity": "uncommon"
+    },
+    {
+      "quantity": 1,
+      "name": "G'raha Tia",
+      "mana_cost": "{4}{W}",
+      "cmc": 5.0,
+      "type_line": "Legendary Creature \u00e2\u20ac\u201d Cat Archer",
+      "oracle_text": "Reach\nThe Allagan Eye \u00e2\u20ac\u201d Whenever one or more other creatures and/or artifacts you control die, draw a card. This ability triggers only once each turn.",
+      "colors": [
+        "W"
+      ],
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Reach",
+        "The Allagan Eye"
+      ],
+      "rarity": "uncommon",
+      "power": "3",
+      "toughness": "5"
+    },
+    {
+      "quantity": 1,
+      "name": "Rosa, Resolute White Mage",
+      "mana_cost": "{3}{W}",
+      "cmc": 4.0,
+      "type_line": "Legendary Creature \u00e2\u20ac\u201d Human Noble Cleric",
+      "oracle_text": "Reach (This creature can block creatures with flying.)\nAt the beginning of combat on your turn, put a +1/+1 counter on target creature you control. It gains lifelink until end of turn. (Damage dealt by the creature also causes you to gain that much life.)",
+      "colors": [
+        "W"
+      ],
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Reach"
+      ],
+      "rarity": "rare",
+      "power": "2",
+      "toughness": "3"
+    },
+    {
+      "quantity": 1,
+      "name": "Beatrix, Loyal General",
+      "mana_cost": "{4}{W}{W}",
+      "cmc": 6.0,
+      "type_line": "Legendary Creature \u00e2\u20ac\u201d Human Soldier",
+      "oracle_text": "Vigilance (Attacking doesn't cause this creature to tap.)\nAt the beginning of combat on your turn, you may attach any number of Equipment you control to target creature you control.",
+      "colors": [
+        "W"
+      ],
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Vigilance"
+      ],
+      "rarity": "rare",
+      "power": "4",
+      "toughness": "4"
+    },
+    {
+      "quantity": 3,
+      "name": "Item Shopkeep",
+      "mana_cost": "{1}{R}",
+      "cmc": 2.0,
+      "type_line": "Creature \u00e2\u20ac\u201d Human Citizen",
+      "oracle_text": "Whenever you attack, target attacking equipped creature gains menace until end of turn. (It can't be blocked except by two or more creatures.)",
+      "colors": [
+        "R"
+      ],
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "rarity": "common",
+      "power": "2",
+      "toughness": "2"
+    },
+    {
+      "quantity": 2,
+      "name": "Warrior's Sword",
+      "mana_cost": "{3}{R}",
+      "cmc": 4.0,
+      "type_line": "Artifact \u00e2\u20ac\u201d Equipment",
+      "oracle_text": "Job select (When this Equipment enters, create a 1/1 colorless Hero creature token, then attach this to it.)\nEquipped creature gets +3/+2 and is a Warrior in addition to its other types.\nEquip {5} ({5}: Attach to target creature you control. Equip only as a sorcery.)",
+      "colors": [
+        "R"
+      ],
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Job select",
+        "Equip"
+      ],
+      "rarity": "common"
+    },
+    {
+      "quantity": 1,
+      "name": "Suplex",
+      "mana_cost": "{1}{R}",
+      "cmc": 2.0,
+      "type_line": "Sorcery",
+      "oracle_text": "Choose one \u00e2\u20ac\u201d\n\u00e2\u20ac\u00a2 Suplex deals 3 damage to target creature. If that creature would die this turn, exile it instead.\n\u00e2\u20ac\u00a2 Exile target artifact.",
+      "colors": [
+        "R"
+      ],
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "rarity": "common"
+    },
+    {
+      "quantity": 1,
+      "name": "Freya Crescent",
+      "mana_cost": "{R}",
+      "cmc": 1.0,
+      "type_line": "Legendary Creature \u00e2\u20ac\u201d Rat Knight",
+      "oracle_text": "Jump \u00e2\u20ac\u201d During your turn, Freya Crescent has flying.\n{T}: Add {R}. Spend this mana only to cast an Equipment spell or activate an equip ability.",
+      "colors": [
+        "R"
+      ],
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Jump"
+      ],
+      "rarity": "uncommon",
+      "power": "1",
+      "toughness": "1"
+    },
+    {
+      "quantity": 2,
+      "name": "Samurai's Katana",
+      "mana_cost": "{2}{R}",
+      "cmc": 3.0,
+      "type_line": "Artifact \u00e2\u20ac\u201d Equipment",
+      "oracle_text": "Job select (When this Equipment enters, create a 1/1 colorless Hero creature token, then attach this to it.)\nEquipped creature gets +2/+2, has trample and haste, and is a Samurai in addition to its other types.\nMurasame \u00e2\u20ac\u201d Equip {5}",
+      "colors": [
+        "R"
+      ],
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Murasame",
+        "Job select",
+        "Equip"
+      ],
+      "rarity": "uncommon"
+    },
+    {
+      "quantity": 1,
+      "name": "Barret Wallace",
+      "mana_cost": "{3}{R}",
+      "cmc": 4.0,
+      "type_line": "Legendary Creature \u00e2\u20ac\u201d Human Rebel",
+      "oracle_text": "Reach\nWhenever Barret Wallace attacks, it deals damage equal to the number of equipped creatures you control to defending player.",
+      "colors": [
+        "R"
+      ],
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Reach"
+      ],
+      "rarity": "uncommon",
+      "power": "4",
+      "toughness": "4"
+    },
+    {
+      "quantity": 1,
+      "name": "Lightning, Security Sergeant",
+      "mana_cost": "{2}{R}",
+      "cmc": 3.0,
+      "type_line": "Legendary Creature \u00e2\u20ac\u201d Human Soldier",
+      "oracle_text": "Menace (This creature can't be blocked except by two or more creatures.)\nWhenever Lightning deals combat damage to a player, exile the top card of your library. You may play that card for as long as you control Lightning.",
+      "colors": [
+        "R"
+      ],
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Menace"
+      ],
+      "rarity": "rare",
+      "power": "2",
+      "toughness": "3"
+    },
+    {
+      "quantity": 1,
+      "name": "Judgment Bolt",
+      "mana_cost": "{3}{R}",
+      "cmc": 4.0,
+      "type_line": "Instant",
+      "oracle_text": "Judgment Bolt deals 5 damage to target creature and X damage to that creature's controller, where X is the number of Equipment you control.",
+      "colors": [
+        "R"
+      ],
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "rarity": "rare"
+    },
+    {
+      "quantity": 1,
+      "name": "Ultima Weapon",
+      "mana_cost": "{7}",
+      "cmc": 7.0,
+      "type_line": "Legendary Artifact \u00e2\u20ac\u201d Equipment",
+      "oracle_text": "Whenever equipped creature attacks, destroy target creature an opponent controls.\nEquipped creature gets +7/+7.\nEquip {7}",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [
+        "Equip"
+      ],
+      "rarity": "rare"
+    },
+    {
+      "quantity": 4,
+      "name": "Rabanastre, Royal City",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u00e2\u20ac\u201d Town",
+      "oracle_text": "This land enters tapped.\n{T}: Add {R} or {W}.",
+      "colors": [],
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [],
+      "rarity": "common"
+    },
+    {
+      "quantity": 13,
+      "name": "Plains",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u00e2\u20ac\u201d Plains",
+      "oracle_text": "({T}: Add {W}.)",
+      "colors": [],
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "rarity": "common"
+    },
+    {
+      "quantity": 8,
+      "name": "Mountain",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u00e2\u20ac\u201d Mountain",
+      "oracle_text": "({T}: Add {R}.)",
+      "colors": [],
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "rarity": "common"
+    }
+  ]
+}

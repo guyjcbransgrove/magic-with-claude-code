@@ -1,2 +1,4 @@
 .encryption_key
 .claude/
+node_modules/
+viewer/dist/

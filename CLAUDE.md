@@ -159,6 +159,10 @@ Your text output is visible to the human in the terminal. Treat it exactly like 
 
 **Do your thinking silently.** When deciding what to play, read your hand and evaluate options internally. The human should only see the result: "I cast [card] for [cost]" — not the deliberation.
 
+## Ignored Directories
+
+Ignore the `viewer/` directory — it's a read-only display layer and not relevant to gameplay. Do not read, search, or reference files in `viewer/` during game sessions.
+
 ## Tips
 
 - **Read your hand** by decrypting entries in `hand.yaml` and looking up the card_ids in `decks/red_white_deck.json`. This tells you your options.

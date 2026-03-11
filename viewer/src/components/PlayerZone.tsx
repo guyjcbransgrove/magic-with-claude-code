@@ -22,7 +22,7 @@ export default function PlayerZone({ player, side }: Props) {
         <ManaPool pool={player.mana_pool} />
       </div>
       <div className="zone-main">
-        <Battlefield permanents={player.battlefield} />
+        <Battlefield permanents={player.battlefield} side={side} />
       </div>
       <div className="zone-hand-area">
         <HandZone count={player.hand_count} />

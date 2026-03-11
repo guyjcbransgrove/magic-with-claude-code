@@ -50,14 +50,68 @@ function parseManaPool(raw: RawYaml): Record<string, number> {
 
 function parsePermanents(raw: RawYaml): unknown[] {
   const permanents = raw.permanents;
-  if (Array.isArray(permanents)) return permanents;
-  return [];
+  if (!Array.isArray(permanents)) return [];
+
+  // First pass: transform flat YAML into nested structure
+  const transformed = permanents.map((p: Record<string, unknown>) => ({
+    id: (p.card_id as string) || "",
+    name: (p.name as string) || "",
+    card_data: {
+      mana_cost: (p.mana_cost as string) || "",
+      type_line: (p.type_line as string) || "",
+      oracle_text: (p.oracle_text as string) || "",
+      colors: (p.colors as string[]) || [],
+      keywords: (p.keywords as string[]) || [],
+      power: p.power != null ? String(p.power) : undefined,
+      toughness: p.toughness != null ? String(p.toughness) : undefined,
+    },
+    status: {
+      tapped: Boolean(p.tapped),
+      summoning_sick: Boolean(p.summoning_sickness),
+      counters: (p.counters as Record<string, number>) || {},
+      attached: [] as unknown[],
+      damage_marked: (p.damage_marked as number) || 0,
+      is_token: Boolean(p.is_token) || String(p.card_id || "").includes("token"),
+    },
+    _attached_to: (p.attached_to as string) || null,
+  }));
+
+  // Second pass: resolve equipment attachments
+  const byId = new Map(transformed.map((t) => [t.id, t]));
+  for (const t of transformed) {
+    if (t._attached_to) {
+      const host = byId.get(t._attached_to);
+      if (host) {
+        host.status.attached.push({
+          id: t.id,
+          name: t.name,
+          card_data: t.card_data,
+          status: t.status,
+        });
+      }
+    }
+  }
+
+  // Filter out attached equipment from top-level list
+  return transformed
+    .filter((t) => !t._attached_to)
+    .map(({ _attached_to, ...rest }) => rest);
 }
 
 function parseCards(raw: RawYaml, key: string): unknown[] {
   const cards = raw[key];
-  if (Array.isArray(cards)) return cards;
-  return [];
+  if (!Array.isArray(cards)) return [];
+  return cards.map((c: Record<string, unknown>) => ({
+    id: (c.card_id as string) || "",
+    name: (c.name as string) || "",
+    card_data: {
+      mana_cost: (c.mana_cost as string) || "",
+      type_line: (c.type_line as string) || "",
+      oracle_text: (c.oracle_text as string) || "",
+      power: c.power != null ? String(c.power) : undefined,
+      toughness: c.toughness != null ? String(c.toughness) : undefined,
+    },
+  }));
 }
 
 function buildGameState() {

@@ -54,6 +54,7 @@ export default function Card({ permanent }: Props) {
     <div
       className={`card ${tapped ? "card-tapped" : ""} ${sick ? "card-sick" : ""}`}
     >
+      {tapped && <div className="card-tapped-badge">TAPPED</div>}
       <div className="card-header">
         <span className="card-name">{name}</span>
         <span className="card-cost">

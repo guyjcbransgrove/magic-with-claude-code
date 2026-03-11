@@ -23,11 +23,14 @@ export default function Board({ state, onToggleLog }: Props) {
         </button>
       </div>
 
-      <PlayerZone player={state.claude} side="opponent" />
+      <div className="board-content">
+        <PlayerZone player={state.claude} side="opponent" />
 
-      {state.stack.length > 0 && <StackDisplay stack={state.stack} />}
+        {state.stack.length > 0 && <StackDisplay stack={state.stack} />}
+        <div className="board-divider" />
 
-      <PlayerZone player={state.human} side="self" />
+        <PlayerZone player={state.human} side="self" />
+      </div>
 
       <div className="board-footer">
         <span className="player-label">
